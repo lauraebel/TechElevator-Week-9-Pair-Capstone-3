@@ -34,7 +34,7 @@ public class JDBCParkDao implements ParkDao {
 	@Override
 	public Park getParkByCode(String parkCode) {
 		Park park = null;
-		String sqlSelectParkByCode = "select * from park where parkcode = ?";
+		String sqlSelectParkByCode = "SELECT * FROM park JOIN weather ON park.parkcode = weather.parkcode WHERE park.parkcode = ?";
 		SqlRowSet results = jdbcTemplate.queryForRowSet(sqlSelectParkByCode, parkCode);
 		if ( results.next()) {
 			park = mapRowToPark(results);
@@ -59,7 +59,10 @@ public class JDBCParkDao implements ParkDao {
 		park.setParkDescription(row.getString("parkdescription"));
 		park.setEntryFee(row.getInt("entryfee"));
 		park.setAnimalSpecies(row.getInt("numberofanimalspecies"));
-		
+		park.setFiveDay(row.getInt("fivedayforecastvalue"));
+		park.setLowTemp(row.getInt("low"));
+		park.setHighTemp(row.getInt("high"));
+		park.setForecast(row.getString("forecast"));
 		return park;
 	}
 

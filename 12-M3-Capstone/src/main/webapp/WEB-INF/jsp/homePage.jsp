@@ -8,8 +8,6 @@
 <section id="main-content" class="main">
 
 
-
-
 <c:forEach items="${parks}" var="parks">
 <div id="parks ">
 
@@ -21,7 +19,7 @@
 
 
 <c:url value="/parkDetails" var="parkDetailsUrl" >
-<c:param name="code" value="${parks.parkCode}" />
+<c:param name="parkcode" value="${parks.parkCode}" />
 </c:url>
 
 

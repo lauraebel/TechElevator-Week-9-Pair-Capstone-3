@@ -7,6 +7,7 @@ public class Weather {
 	private int lowTemp;
 	private int highTemp;
 	private String forecast;
+	
 	public String getParkCode() {
 		return parkCode;
 	}
