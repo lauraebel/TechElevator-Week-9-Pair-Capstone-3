@@ -28,8 +28,6 @@ public class JDBCParkDao implements ParkDao {
 			while ( results.next()) {
 				allParks.add(mapRowToPark(results));
 			}
-				
-		
 		return allParks;
 	}
 

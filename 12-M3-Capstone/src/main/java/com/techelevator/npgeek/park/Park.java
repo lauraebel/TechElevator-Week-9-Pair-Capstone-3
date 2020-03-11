@@ -1,7 +1,5 @@
 package com.techelevator.npgeek.park;
 
-import java.util.Date;
-
 public class Park {
 
 	private String parkCode;
@@ -17,6 +15,9 @@ public class Park {
 	private String quote;
 	private String quoteSource;
 	private String parkDescription;
+	private int entryFee;
+	private int animalSpecies;
+	
 	public String getQuoteSource() {
 		return quoteSource;
 	}
@@ -32,8 +33,6 @@ public class Park {
 	public void setParkDescription(String parkDescription) {
 		this.parkDescription = parkDescription;
 	}
-	private int entryFee;
-	private int animalSpecies;
 	
 	public String getParkCode() {
 		return parkCode;
