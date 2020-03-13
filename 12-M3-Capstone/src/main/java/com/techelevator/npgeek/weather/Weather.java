@@ -7,6 +7,10 @@ public class Weather {
 	private int lowTemp;
 	private int highTemp;
 	private String forecast;
+	private String snowAdvisory = "Bring Snowshoes!";
+	private String rainAdvisory = "Bring rain gear and waterproof shoes!";
+	private String thunderstormAdvisory = "Please seek shelter and avoid hiking on exposed ridges";
+	private String sunnyAdvisory = "Please use sunblock!";
 	
 	public String getParkCode() {
 		return parkCode;
@@ -32,12 +36,42 @@ public class Weather {
 	public void setHighTemp(int highTemp) {
 		this.highTemp = highTemp;
 	}
+	
 	public String getForecast() {
 		return forecast;
 	}
+	
 	public void setForecast(String forecast) {
 		this.forecast = forecast;
 	}
+	public String getSnowAdvisory() {
+		return snowAdvisory;
+	}
+	public void setSnowAdvisory(String snowAdvisory) {
+		this.snowAdvisory = snowAdvisory;
+	}
+	public String getRainAdvisory() {
+		return rainAdvisory;
+	}
+	public void setRainAdvisory(String rainAdvisory) {
+		this.rainAdvisory = rainAdvisory;
+	}
+	public String getThunderstormAdvisory() {
+		return thunderstormAdvisory;
+	}
+	public void setThunderstormAdvisory(String thunderstormAdvisory) {
+		this.thunderstormAdvisory = thunderstormAdvisory;
+	}
+	public String getSunnyAdvisory() {
+		return sunnyAdvisory;
+	}
+	public void setSunnyAdvisory(String sunnyAdvisory) {
+		this.sunnyAdvisory = sunnyAdvisory;
+	}
 	
 
+
+
 }
+	
+

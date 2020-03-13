@@ -1,0 +1,85 @@
+header > a > img{
+	display: block;
+	height: 300px;
+}
+
+#main-park-details {
+	text-align: center;
+}
+
+#main-park-details > img {
+	width: 50%;
+}
+
+.park-details {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+#five-day-forecast {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	
+	grid-template-areas: 
+	"label label label label label"
+	"day day day day day"
+	"temp temp temp temp temp"
+	"htemp htemp htemp htemp htemp"
+	"forecast forecast forecast forecast forecast";	
+	flex-wrap: wrap;
+} 
+
+#five-day-forecast > h2 {
+	grid-area: label;
+}
+
+#five-day-forecast > div {
+	display: block;
+	justify-content: space-between;
+}
+
+#five-day-forecast > div > .day {
+	width: 100%;
+	grid-area: day;
+}
+
+.weather > #high {
+	text-align: center;
+	width: 20%;
+	grid-area: temp;
+}
+
+.weather > #low {
+	text-align: center;
+	width: 100%;
+	grid-area: htemp;
+}
+
+.weather > #forecast {
+	text-align: center;
+	width: 100%;
+	grid-area: forecast;
+} 
+
+#park {
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+#survey-main-content > #email {
+	width: 50px;
+	
+}
+
+#email-address {
+	padding-top: 10px;
+	width: 1000px;
+	font-size: 20px;
+}
+
+#residence {
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+

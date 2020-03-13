@@ -17,6 +17,10 @@ public class Park {
 	private String parkDescription;
 	private int entryFee;
 	private int animalSpecies;
+	private int fiveDay;
+	private int lowTemp;
+	private int highTemp;
+	private String forecast;
 	
 	public int getFiveDay() {
 		return fiveDay;
@@ -49,10 +53,6 @@ public class Park {
 	public void setForecast(String forecast) {
 		this.forecast = forecast;
 	}
-	private int fiveDay;
-	private int lowTemp;
-	private int highTemp;
-	private String forecast;
 	
 	public String getQuoteSource() {
 		return quoteSource;
